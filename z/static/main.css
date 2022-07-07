@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.woff2?t=1657024856610') format('woff2'),
+        url('iconfont.woff?t=1657024856610') format('woff'),
+        url('iconfont.ttf?t=1657024856610') format('truetype');
+}
+
+
+body, dl, dt, dd, ol, ul, h1, h2, h3, h4, h5, h6, p, pre, code, form, fieldset, legend, figure {
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+
+body{
+    display: flex;
+    /* background-color: antiquewhite; */
+    background-image: url("https://cn.bing.com/az/hprichbg/rb/VenetianRowing_ZH-CN6668445308_1920x1080.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+
+
+main{
+    width: 100%;
+    margin: auto;
+    padding: 12em 1.75em;
+    max-width: 50em;
+}
+
+.inputbox{
+    display: flex;
+    color: rgb(51,51,51);
+    position: relative;
+    padding: .5em 1em;
+    border-radius: 3em;
+    background-color: #fff;
+}
+input{
+    outline: none;
+}
+
+
+.search-select{
+    padding: .75em 0;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+
+
+
+.search-select .iconfont{
+    font-weight: 300;
+    color: goldenrod;
+    font-size: 1.5em;
+    pointer-events: none;
+    
+}
+
+.inputbox input{
+    font-size: 1.2em;
+    flex: 1 1 auto;
+    max-width: 100%;
+    border-radius: 0;
+    border: none;
+    margin: 0 1em;
+    background-color: transparent;
+}
+
+
+
+.btn{
+    color: inherit;
+    cursor: pointer;
+    background-color: #fff;
+    padding: .5em 1em;
+    border-radius: .5em;
+    display: inline-block;
+    border:1px solid transparent;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.select-search{
+    /* display: flex; */
+    width: 4em;
+    height: 11.1em;
+    border-radius: 4em;
+    background-color: #fff;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+    display: none;
+}
+.select-search>div{
+    /* background-color: black; */
+    width: 2.2em;
+    height: 2.2em;
+    /* background-color: black; */
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2em;
+    /* background-color:rgba(119,119,118,.1); */
+
+}
+.select-search>div:hover{
+
+    background-color:rgba(119,119,118,.1);
+}
+
+
+
+.select-search .iconfont{
+    font-weight: 300;
+    color: goldenrod;
+    font-size: 1.5em;
+    pointer-events: none; 
+}
+
+
+footer{
+    height: 40em;
+}
+
+
+
+
+
+
