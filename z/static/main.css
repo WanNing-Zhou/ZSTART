@@ -11,7 +11,7 @@ body, dl, dt, dd, ol, ul, h1, h2, h3, h4, h5, h6, p, pre, code, form, fieldset, 
     padding: 0;
 }
 
-,html,body{
+html,body{
     height: 100%;
 }
 
