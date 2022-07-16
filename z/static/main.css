@@ -82,7 +82,7 @@ body{
 .main{
     display: inline-block;
     /* display: flex; */
-    height: 30em;
+    height: 23em;
     width: 100%;
     margin: auto;
     padding: 1em;
@@ -180,6 +180,49 @@ input{
     pointer-events: none; 
 }
 
+.sentence{
+    padding:2em 1em;
+    background-color:rgba(0, 0, 0, 0.3);  
+    border-radius: 1em;
+    margin-bottom: 3em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hitokoto-fullpage{
+    width:24em;
+    position: relative;
+}
+
+
+.bracket-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bracket-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#hitokoto-text{
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.4em;
+    padding: 8.5px 25px;
+    word-break: normal;
+}
+
+#hitokoto-author{
+    font-size: .9em;
+    margin-top: 20px;
+    float: right;
+    word-break: normal;
+}
+
+
+
 
 footer{
     height: 2em;
@@ -195,10 +238,7 @@ footer{
     user-select: none;
 } 
 
-.sentence{
-    width: 5em;
-    height: 4em;
-}
+
 
 
 
