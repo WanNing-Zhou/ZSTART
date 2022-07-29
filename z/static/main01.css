@@ -1,0 +1,373 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.woff2?t=1657024856610') format('woff2'),
+        url('iconfont.woff?t=1657024856610') format('woff'),
+        url('iconfont.ttf?t=1657024856610') format('truetype');
+}
+
+
+@media screen and (max-width:539px) {
+
+    body{
+        background-image: url("../static/backgroundimg.jpg");
+ }
+    
+    .inputbox{
+        width: 80%;
+    }
+
+    .select-search{
+        left: 10%;
+    }
+
+    .sentence{
+        width: 68%;
+        
+    }
+    .sentencebox{
+        bottom: 20%;
+    }
+    .footer{
+
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:540px) and (max-width: 720px) {
+    body{
+        background-image: url("../static/backgroundimg.jpg");
+    }
+    
+    
+    .inputbox{
+        width: 70%;
+    }
+
+    .select-search{
+        left: 15%;
+    }
+
+    .sentencebox{
+        bottom: 20%;
+    }
+    .sentence{
+        width: 60%;
+    
+    }
+    
+    .footer{
+        width: 60%;
+    }
+
+   
+    }
+
+@media screen and (min-width:720px) and (max-width: 1200px) {
+
+    body{
+        background-image: url("https://api.paugram.com/bing");
+    }
+
+   
+    .inputbox{
+        width: 60%;
+    }
+
+    .select-search{
+        left: 20%;
+    }
+
+    .footer{
+        left:25% ;
+        width: 50%;
+    }
+    .sentence{
+        width: 50%;
+       
+        
+    }
+
+    .sentencebox{
+        bottom: 20%;
+    }
+
+}
+
+@media screen and (min-width:1200px){
+    
+
+    body{
+        background-image: url("https://api.paugram.com/bing");
+ }
+    .inputbox{
+        width: 50%;
+    }
+
+    .select-search{
+        left: 25%;
+    }
+
+    
+    .footer{
+        width: 20%;
+    }
+
+    .sentence{
+        width: 30%;
+    
+    
+    }
+    .sentencebox{
+        bottom: 20%;
+    }
+}
+
+
+
+body, dl, dt, dd, ol, ul, h1, h2, h3, h4, h5, h6, p, pre, code, form, fieldset, legend, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    width: 100%;
+    height:100%;
+}
+
+body{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+
+body{
+    
+    /* background-color: antiquewhite; */
+    /* background-image: url("https://api.paugram.com/bing"); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content:flex-start; */
+    overflow: hidden;
+}
+
+
+
+.header{
+  
+    position: fixed;
+    /* width: 100%; */
+     /* background-color: aqua; */
+     top:10%;
+     display: flex;
+    
+     width: 100%;
+     
+     display: inline-block;
+     align-items: center;
+     justify-content: center;
+     /* border: 1px solid red; */
+ }
+
+.timebox {
+    width: 3em;
+    margin: auto;
+    border-radius:  1em;
+    text-shadow: 0px 1px 30px white;
+    color: rgba(0, 0, 0,.8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8em;
+    user-select: none;
+    padding: 0 20px;
+
+    /* 盒子投影 */
+    /* -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent), to(rgba(250, 250, 250, .2))); */
+
+    transition: all .6s;
+}
+
+.timebox:hover{
+
+    font-size: 2.3em;
+    /* transform: ; */
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    border: 1px;
+}
+.navi-search{
+    width: 100%;
+    position: absolute;
+    
+}
+
+.inputbox{
+    margin: 0 auto;
+    height: 3em;
+    display: flex;
+    align-items: center;
+
+    padding: .1em 1em;
+    border-radius: 3em;
+    background-color: #fff;
+}
+
+input{
+    outline: none;
+}
+
+.search-select{
+    padding: .75em 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.search-select .iconfont{
+    font-weight: 300;
+    color: goldenrod;
+    font-size: 1.5em;
+    pointer-events: none;
+    
+}
+
+.inputbox input{
+    font-size: 1.2em;
+    flex: 1 1 auto;
+    max-width: 100%;
+    border-radius: 0;
+    border:  none;
+    margin: 0 1em;
+    background-color: transparent;
+    min-width: 2em;
+}
+
+
+.btn{
+  
+    cursor: pointer;
+    background-color: transparent;
+    /* padding: .3em 1em; */
+    border-radius: .3em;
+    /* display: inline-block; */
+    border:1px;
+    /* font-style: italic; */
+    font-weight: 900;
+}
+
+
+.select-search{
+    position: absolute;
+   
+    width: 4em;
+    height: 11.1em;
+    border-radius: 4em;
+    background-color: #fff;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+    display: none;
+}
+.select-search>div{
+    /* background-color: black; */
+    width: 2.2em;
+    height: 2.2em;
+    /* background-color: black; */
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2em;
+    /* background-color:rgba(119,119,118,.1); */
+
+}
+.select-search>div:hover{
+    background-color:rgba(119,119,118,.1);
+}
+
+.select-search .iconfont{
+    font-weight: 300;
+    color: goldenrod;
+    font-size: 1.5em;
+    pointer-events: none; 
+}
+
+.sentencebox{
+    position: absolute;
+    width: 100%;
+}
+.sentence{
+    margin: 0 auto;
+    padding:2em 1em;
+    background-color:rgba(0, 0, 0, 0.3);  
+    border-radius: 1em;
+   border: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.9);
+    user-select: none;
+}
+
+.hitokoto-fullpage{
+    width:100%;
+    position: relative;
+}
+
+
+.bracket-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bracket-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#hitokoto-text{
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.4em;
+    padding: 8.5px 25px;
+    word-break: normal;
+}
+
+#hitokoto-author{
+    font-size: .9em;
+    margin-top: 10px;
+    float: right;
+    word-break: normal;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    width: 100%;
+  position: absolute;
+    bottom: 1.5em;
+}
+.footer{
+    left:50%;
+    margin: 0 auto;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 2em;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: .2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 2em;
+    user-select: none;
+} 
+
+
+
+
