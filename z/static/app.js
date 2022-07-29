@@ -17,10 +17,6 @@ function padZero(n) {
 }
 
 
-
-
-
-
 window.onload = function () {
 
 
